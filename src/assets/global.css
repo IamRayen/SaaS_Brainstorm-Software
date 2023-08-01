@@ -1,0 +1,58 @@
+/*Color palettes*/
+:root {
+    --main-color01: #0062b8;
+    --background-color01: #f4faff;
+    --text-color01: #000b14;
+    --main-color01-light:rgba(0, 98, 184,0.1);
+
+    --main-color02: #ffe500;
+    --background-color02: #141200;
+    --text-color02: #fffdeb;
+
+    --main-color03: #610070;
+    --background-color03: #fcebff;
+    --text-color03: #120014;
+
+    --error-main: #ff0000;
+    --error-light: #ffc2c2;
+    --error-dark: #8f0000;
+
+    --verified-main: #14c800;
+    --verified-light: #b6ffad;
+    --verified-dark: #063d00;
+}
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*General CSS*/
+* {
+    margin: 0;
+    text-decoration: none;
+    font-family: League Spartan;
+    font-size: 20px;
+    color: var(--text-color01);
+    line-height: 130%;
+    letter-spacing: -1px;
+}
+
+/*App Layout*/
+.App {
+    padding: 32px 160px 32px 160px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+    background-color: var(--background-color01);
+}
+
+@media screen and (max-width:992px) {
+    .App{
+        padding: 16px 32px 16px 32px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .App{
+        padding: 0px 16px 0px 16px;
+        overflow: hidden;
+    }
+}

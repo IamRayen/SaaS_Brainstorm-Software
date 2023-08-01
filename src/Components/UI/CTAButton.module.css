@@ -1,0 +1,39 @@
+/* CTAButton.css */
+.ctaButton {
+    /* Customize the button's appearance */
+    display:flex;
+    background-color: var(--main-color01);
+    padding: 20px 48px 12px 48px;
+    border-radius: 32px;
+    width: fit-content;
+    transition: 0.2s ease;
+    border: none;
+    font-size: 32px;
+    color: var(--background-color01);
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.medium {
+    transform: scale(0.8);
+}
+.small {
+    transform: scale(0.65);
+}
+
+/* Button hover effect */
+.ctaButton:hover {
+    transform: scale(1.1) translateY(-16px);
+    box-shadow: 0 7px 10px rgba(0,0,0,0.6);}
+.medium:hover {
+    transform: scale(0.9) translateY(-8px);
+    box-shadow: 0 7px 10px rgba(0,0,0,0.6);}
+.small:hover {
+    transform: scale(0.7) ;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.6);}
+
+/* Button click effect */
+.ctaButton:active {
+    background-color: #004080;
+}

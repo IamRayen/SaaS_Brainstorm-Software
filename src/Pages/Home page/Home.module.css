@@ -1,0 +1,60 @@
+/*home Page CSS*/
+.homePage{
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+.home { 
+    position: relative;
+}
+.ill{
+    position: absolute;
+    width: 300px;
+    top: 0;
+    right: 0;
+    transition: 0.2s ease-in-out;
+}
+.ill:hover{
+    transform: translateX(-16px) scale(1.1);
+}
+.homeText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    flex-shrink: 0;
+}
+.homeHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex-shrink: 0;
+}
+.homeHeading .specialWord {
+    font-size: 80px;
+    color: var(--main-color01);
+}
+.homeHeading h1 {
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76.8px; /* 137.143% */
+    letter-spacing: -1.12px;
+}
+.homeHeading p {
+    max-width: 450px;
+}
+
+.CTA {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.CTA p {
+    margin: auto;
+    width: fit-content;
+}
+
+

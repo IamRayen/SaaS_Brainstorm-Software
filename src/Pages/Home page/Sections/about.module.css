@@ -1,0 +1,15 @@
+.aboutUs {
+  display: flex;
+  gap: 40px;
+}
+.aboutUsSections{
+display: flex;
+flex-direction: column;
+flex: 1;
+justify-content: flex-start;
+align-items: center;
+gap: 16px;
+}
+.aboutUsSections h1{
+font-size:48px ;
+}

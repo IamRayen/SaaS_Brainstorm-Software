@@ -1,0 +1,143 @@
+/*Navigation Bar CSS*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*MENU icon on phones and tablets*/
+.menu_bars {
+    border: none;
+    cursor: pointer;
+    width: 32px;
+}
+.dropdown{
+    display: none;
+}
+/*Logo and Links*/
+.logoAndLinks{
+    display: flex;
+    align-items: baseline;
+    gap: 48px;
+}
+/*Website Logo*/
+.logo {
+    font-size: 40px;
+    font-weight: 600;
+}
+/*List of links in avbar*/
+.links {
+    display: flex;
+    padding: 0;
+    font-size: 24px;
+    column-gap: 24px;
+    list-style: none;
+}
+.links a {
+    position: relative;
+}
+.links a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color01);
+    transition: width 0.2s ease;
+}
+.links a:hover::before {
+    width: 100%;
+}
+
+/*Login and Signup buttons*/
+.inup{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding: 0;
+    gap: 10px;
+}
+.login {
+    position: relative;
+    transform: translateY(-3.5px);
+    font-size: 24px;
+}
+.login::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color01);
+    transition: width 0.2s ease;
+}
+.login:hover::before {
+    width: 100%;
+}
+
+/*CSS in Tablet screen*/
+@media screen and (max-width: 768px) {
+    /*Items that disappear*/
+    .links {
+        display: none;
+    }
+    .inup {
+        display: none;
+    }
+    /*Items that appear*/
+    .menu_bars /*icon of menu for tablet and phone screen*/ {
+        display: inline-block;
+    }
+
+    /*Items that change*/
+    .dropdown /*Bars icon and dropdownlist*/ {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dropdownList /*List of links in navbar Tablet*/ {
+        display: flex;
+        position: absolute;
+        top: 120%;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+        background: var(--background-color01);
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    .dropdownList a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 320px;
+        background-color:var(--main-color01-light);
+        height: 80px;
+        font-size: 20px;
+        border-bottom: 2px solid var(--text-color01);
+    }
+    .dropdownList img {
+        height: 24px;
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /*items that disappear*/
+    .navBtn {
+        display: none;
+    }
+    /*Items that appear*/
+    .menu_bars/*icon menu*/ {
+        display: inline-block;
+    }
+    /*Items that change*/
+    .dropdownList a {
+        height: 64px;
+        width: 240px;
+    }
+}
